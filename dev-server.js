@@ -12,6 +12,7 @@ import { URL } from 'url';
 import chartHandler from './api/chart.js';
 import healthHandler from './api/health.js';
 import citiesHandler from './api/cities.js';
+import transitsHandler from './api/transits.js';
 
 const PORT = 3001;
 
@@ -19,6 +20,7 @@ const routes = {
   '/api/chart': chartHandler,
   '/api/health': healthHandler,
   '/api/cities': citiesHandler,
+  '/api/transits': transitsHandler,
 };
 
 function createMockReq(req, parsedUrl, body) {
